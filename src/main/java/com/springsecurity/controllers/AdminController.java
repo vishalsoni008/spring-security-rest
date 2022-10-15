@@ -19,14 +19,14 @@ public class AdminController {
 	@Autowired
 	private AdminServices adminService;
 	
-	@GetMapping("/all")
-	public List<Admin> all(){
-		return adminService.findAllAdmin();
-	}
-	
-	@DeleteMapping("/deleteUser/{email}")
-	public void deleteUser(@PathVariable("email") String email) {
-		 adminService.deleteUser(email);
-	}
+//	@GetMapping("/all")
+//	public List<Admin> all(){
+//		return adminService.findAllAdmin();
+//	}
+//
+//	@DeleteMapping("/deleteUser/{email}")
+//	public void deleteUser(@PathVariable("email") String email) {
+//		 adminService.deleteUser(email);
+//	}
 
 }

@@ -8,8 +8,7 @@ import com.springsecurity.entity.Users;
 @Repository
 public interface UserRepository extends JpaRepository<Users, Long> {
 
-	Users findByemail(String email);
-
 	Users findByname(String name);
 
+	Users findByEmail(String email);
 }

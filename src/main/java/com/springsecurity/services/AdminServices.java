@@ -17,15 +17,4 @@ public class AdminServices {
 	
 	@Autowired
 	private UserRepository userRepo;
-
-	public List<Admin> findAllAdmin() {
-		// TODO Auto-generated method stub
-		return adminRepo.findAll();
-	}
-
-	public void deleteUser(String email) {
-		// TODO Auto-generated method stub
-		Users user=userRepo.findByemail(email);
-		 userRepo.delete(user);
-	}
 }
