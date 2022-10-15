@@ -1,7 +1,7 @@
-package com.springsecurity.services;
+package com.springsecurity.security;
 
-import java.util.ArrayList;
-
+import com.springsecurity.entity.Users;
+import com.springsecurity.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -9,11 +9,10 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import com.springsecurity.entity.Users;
-import com.springsecurity.repository.UserRepository;
+import java.util.ArrayList;
 
 @Service
-public class CustomUserDeatails implements UserDetailsService {
+public class CustomUserDetails implements UserDetailsService {
 
 	@Autowired
 	private UserRepository userRepo;
