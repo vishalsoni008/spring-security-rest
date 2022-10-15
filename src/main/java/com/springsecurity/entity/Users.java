@@ -6,6 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.util.Date;
 
 @Entity
 @Data
@@ -14,11 +15,15 @@ public class Users {
 
 	@Id
 	@GeneratedValue
-	private long id;
+	private Long id;
 
 	private String name;
 
 	private String email;
 
 	private String password;
+
+	private Date creationDate;
+
+	private Date updateDate;
 }
